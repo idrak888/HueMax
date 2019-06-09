@@ -10,3 +10,17 @@ document.getElementById('red').addEventListener('click', () => {
 document.getElementById('blue').addEventListener('click', () => {
     socket.emit('reqBlue', display);
 });
+document.getElementById('green').addEventListener('click', () => {
+    socket.emit('reqGreen', display);
+    console.log(display);
+});
+document.getElementById('purple').addEventListener('click', () => {
+    socket.emit('reqPurple', display);
+});
+document.getElementById('pink').addEventListener('click', () => {
+    socket.emit('reqPink', display);
+    console.log(display);
+});
+document.getElementById('orange').addEventListener('click', () => {
+    socket.emit('reqOrange', display);
+});

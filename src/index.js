@@ -33,6 +33,18 @@ io.on('connection', socket => {
     socket.on('reqBlue', display => {
         io.sockets.emit('turnBlue', display);
     });
+    socket.on('reqGreen', display => {
+        io.sockets.emit('turnGreen', display);
+    });
+    socket.on('reqPurple', display => {
+        io.sockets.emit('turnPurple', display);
+    });
+    socket.on('reqPink', display => {
+        io.sockets.emit('turnPink', display);
+    });
+    socket.on('reqOrange', display => {
+        io.sockets.emit('turnOrange', display);
+    });
 });
 
 server.listen(port, () => {
